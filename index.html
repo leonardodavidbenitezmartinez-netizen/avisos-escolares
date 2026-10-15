@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#14243b">
+<title>Avisos Escolares · Leonardo</title>
+<style>
+:root{--navy:#14243b;--navy2:#203b5f;--blue:#3478d4;--pale:#edf4fd;--bg:#f3f6fb;--text:#17243a;--muted:#66758d;--line:#e2e9f2;--white:#fff;--red:#d94b55;--green:#16866d;--gold:#d99718}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--text)}button,input,select,textarea{font:inherit}button{cursor:pointer}.app{min-height:100vh}.topbar{height:70px;background:var(--navy);color:white;display:flex;align-items:center;justify-content:space-between;padding:0 24px;gap:12px}.brand{display:flex;align-items:center;gap:12px;font-weight:800;font-size:20px}.brand-icon{font-size:27px}.topright{font-size:14px;color:#e2ebf7}.layout{display:grid;grid-template-columns:220px minmax(0,1fr);min-height:calc(100vh - 70px)}aside{background:var(--navy);padding:20px 13px}.nav-label{font-size:11px;letter-spacing:1.3px;color:#9caec6;padding:10px 12px}.navbtn{display:flex;align-items:center;gap:12px;width:100%;border:0;background:transparent;color:#dce7f6;padding:12px;border-radius:9px;text-align:left;margin:3px 0}.navbtn:hover,.navbtn.active{background:var(--navy2);color:#fff}.navbtn .ico{width:23px;text-align:center;font-size:18px}.sidefoot{color:#9caec6;font-size:12px;line-height:1.5;margin:32px 12px}.main{padding:28px;max-width:1400px;width:100%;margin:auto}.welcome{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;margin-bottom:22px}.welcome h1{font-size:28px;margin:0 0 5px;letter-spacing:-.5px}.welcome p{margin:0;color:var(--muted)}.date-pill{background:white;border:1px solid var(--line);padding:9px 12px;border-radius:10px;font-size:13px;color:var(--muted);white-space:nowrap}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:17px}.card{background:white;border:1px solid var(--line);border-radius:14px;padding:19px;box-shadow:0 2px 8px #182d4807;min-width:0}.cardhead{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:12px}.cardtitle{display:flex;align-items:center;gap:10px;font-size:17px;font-weight:750}.roundico{width:39px;height:39px;border-radius:12px;background:var(--pale);display:grid;place-items:center;font-size:20px}.smallbtn,.primary,.secondary,.danger{border:0;border-radius:8px;padding:9px 12px;font-size:13px;font-weight:650}.smallbtn{background:var(--pale);color:var(--blue)}.primary{background:var(--blue);color:white}.secondary{background:#eef2f7;color:#33445c}.danger{background:#fff0f1;color:var(--red)}.item{padding:13px 0;border-top:1px solid var(--line)}.item:first-child{border-top:0}.itemtop{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}.item strong{font-size:14px}.muted{font-size:12px;color:var(--muted)}.desc{font-size:13px;color:#52627b;margin-top:5px;white-space:pre-wrap;overflow-wrap:anywhere}.tag{font-size:11px;border-radius:20px;padding:4px 8px;background:#eef4fc;color:#285da0;white-space:nowrap}.tag.done{background:#e5f7ef;color:#16866d}.tag.overdue{background:#fff0f1;color:#c63e49}.checkline{display:flex;gap:10px;align-items:flex-start}.checkline input{margin-top:3px;accent-color:var(--blue);width:17px;height:17px}.checkline .itembody{flex:1;min-width:0}.completed strong{text-decoration:line-through;color:#8994a5}.formbox{background:#f8faff;border:1px solid var(--line);border-radius:11px;padding:14px;margin:13px 0 4px}.formgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}.field{display:flex;flex-direction:column;gap:5px;font-size:12px;color:#52627b;font-weight:650}.field.full{grid-column:1/-1}.field input,.field select,.field textarea{border:1px solid #d4deeb;border-radius:8px;background:white;padding:10px;color:var(--text);width:100%;min-width:0}.field textarea{resize:vertical;min-height:74px}.formactions{display:flex;gap:8px;justify-content:flex-end;margin-top:12px}.empty{padding:18px 4px;color:var(--muted);font-size:13px;text-align:center}.fullcard{grid-column:1/-1}.toolbar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:15px}.toolbar input,.toolbar select{border:1px solid #d4deeb;border-radius:8px;background:white;padding:9px 11px;color:var(--text)}.toolbar input{flex:1;min-width:140px}.footer{text-align:center;color:#8a97aa;font-size:11px;padding:22px 0 5px}.mobile-nav{display:none;width:100%;padding:10px;border:1px solid #d4deeb;border-radius:8px;background:white;margin-bottom:16px}.toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#14243b;color:white;padding:11px 16px;border-radius:10px;box-shadow:0 8px 25px #0002;font-size:13px;z-index:10;display:none;max-width:90vw}
+@media(max-width:760px){.layout{grid-template-columns:1fr}aside{display:none}.mobile-nav{display:block}.main{padding:17px}.topbar{height:62px;padding:0 16px}.brand{font-size:17px}.topright{font-size:12px}.welcome h1{font-size:24px}.date-pill{display:none}.grid{grid-template-columns:1fr}.fullcard{grid-column:auto}.formgrid{grid-template-columns:1fr}.field.full{grid-column:auto}.card{padding:15px}}
+</style>
+</head>
+<body>
+<div class="app">
+<header class="topbar"><div class="brand"><span class="brand-icon">🏫</span><span>Avisos Escolares</span></div><div class="topright">👤 Leonardo</div></header>
+<div class="layout">
+<aside>
+<div class="nav-label">MENÚ PRINCIPAL</div>
+<button class="navbtn active" data-page="Inicio"><span class="ico">⌂</span>Inicio</button>
+<button class="navbtn" data-page="Tareas"><span class="ico">☑</span>Tareas</button>
+<button class="navbtn" data-page="Exámenes"><span class="ico">▦</span>Exámenes</button>
+<button class="navbtn" data-page="Recordatorios"><span class="ico">♧</span>Recordatorios</button>
+<div class="sidefoot">Tu espacio personal para organizar la escuela.<br><br>🔒 Los datos se guardan en este navegador.</div>
+</aside>
+<main class="main">
+<select class="mobile-nav" id="mobileNav" aria-label="Ir a sección"><option>Inicio</option><option>Tareas</option><option>Exámenes</option><option>Recordatorios</option></select>
+<div class="welcome"><div><h1 id="greeting">Hola, Leonardo 👋</h1><p id="subtitle">Organiza tus tareas, exámenes y recordatorios en un solo lugar.</p></div><div class="date-pill" id="today"></div></div>
+<div id="content"></div>
+<div class="footer">Avisos Escolares · Versión personal de Leonardo · Tus datos se guardan localmente en este dispositivo.</div>
+</main>
+</div>
+</div>
+<div id="toast" class="toast" role="status"></div>
+<script>
+(()=> {
+const KEY='avisosEscolaresLeonardo_v1';
+const initial={tasks:[],exams:[],reminders:[]};
+let state;
+try{state=JSON.parse(localStorage.getItem(KEY))||initial}catch{state=initial}
+state={...initial,...state};
+let page='Inicio', taskFilter='Todas', search='';
+const $=s=>document.querySelector(s);
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const todayISO=()=>{let d=new Date();return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`};
+const fmt=d=>{if(!d)return 'Sin fecha';let x=new Date(d+'T12:00:00');return isNaN(x)?d:x.toLocaleDateString('es-MX',{day:'numeric',month:'short',year:'numeric'})};
+function save(){localStorage.setItem(KEY,JSON.stringify(state))}
+function toast(msg){let t=$('#toast');t.textContent=msg;t.style.display='block';clearTimeout(toast.timer);toast.timer=setTimeout(()=>t.style.display='none',2400)}
+function id(){return Date.now().toString(36)+Math.random().toString(36).slice(2,7)}
+function nav(p){page=p;render()}
+function card(title,icon,body,button=''){return `<section class="card"><div class="cardhead"><div class="cardtitle"><span class="roundico">${icon}</span>${title}</div>${button}</div>${body}</section>`}
+function empty(msg){return `<div class="empty">${msg}</div>`}
+function taskItem(t){return `<div class="item"><div class="checkline ${t.done?'completed':''}"><input type="checkbox" data-done-task="${t.id}" ${t.done?'checked':''} aria-label="Marcar tarea como terminada"><div class="itembody"><div class="itemtop"><strong>${esc(t.title)}</strong><span class="tag ${!t.done&&t.date&&t.date<todayISO()?'overdue':t.done?'done':''}">${t.done?'Terminada':t.date?fmt(t.date):'Sin fecha'}</span></div>${t.subject?`<div class="muted">${esc(t.subject)}</div>`:''}${t.notes?`<div class="desc">${esc(t.notes)}</div>`:''}</div><button class="smallbtn" data-delete-task="${t.id}" title="Eliminar tarea" aria-label="Eliminar tarea">✕</button></div></div>`}
+function examItem(x){return `<div class="item"><div class="itemtop"><div><strong>${esc(x.subject)}</strong><div class="desc">${esc(x.topic||'Sin tema añadido')}</div></div><span class="tag ${x.date&&x.date<todayISO()?'overdue':''}">${fmt(x.date)}</span></div><div class="formactions"><button class="smallbtn" data-delete-exam="${x.id}">Eliminar</button></div></div>`}
+function reminderItem(r){return `<div class="item"><div class="itemtop"><div><strong>${esc(r.title)}</strong>${r.notes?`<div class="desc">${esc(r.notes)}</div>`:''}<div class="muted" style="margin-top:5px">${r.date?fmt(r.date):'Sin fecha'}${r.time?' · '+esc(r.time):''}</div></div><span class="tag ${r.done?'done':''}">${r.done?'Hecho':'Pendiente'}</span></div><div class="formactions"><button class="smallbtn" data-toggle-rem="${r.id}">${r.done?'Reabrir':'Marcar hecho'}</button><button class="smallbtn" data-delete-rem="${r.id}">Eliminar</button></div></div>`}
+function taskForm(){return `<form class="formbox" id="taskForm"><div class="formgrid"><label class="field full">¿Qué tienes que hacer? *<input name="title" required maxlength="100" placeholder="Ej. Ejercicios de matemáticas"></label><label class="field">Materia<input name="subject" maxlength="50" placeholder="Ej. Matemáticas"></label><label class="field">Fecha de entrega<input name="date" type="date"></label><label class="field full">Notas (opcional)<textarea name="notes" maxlength="400" placeholder="Páginas, instrucciones..."></textarea></label></div><div class="formactions"><button type="button" class="secondary" data-cancel-form>Cancelar</button><button class="primary">Guardar tarea</button></div></form>`}
+function examForm(){return `<form class="formbox" id="examForm"><div class="formgrid"><label class="field">Materia *<input name="subject" required maxlength="60" placeholder="Ej. Historia"></label><label class="field">Fecha del examen *<input name="date" type="date" required></label><label class="field full">Tema que debes estudiar<input name="topic" maxlength="180" placeholder="Ej. Revolución mexicana"></label></div><div class="formactions"><button type="button" class="secondary" data-cancel-form>Cancelar</button><button class="primary">Guardar examen</button></div></form>`}
+function remForm(){return `<form class="formbox" id="remForm"><div class="formgrid"><label class="field full">Recordatorio *<input name="title" required maxlength="100" placeholder="Ej. Llevar el libro de inglés"></label><label class="field">Fecha<input name="date" type="date"></label><label class="field">Hora (opcional)<input name="time" type="time"></label><label class="field full">Nota opcional<textarea name="notes" maxlength="300" placeholder="Algo que quieras recordar..."></textarea></label></div><div class="formactions"><button type="button" class="secondary" data-cancel-form>Cancelar</button><button class="primary">Guardar recordatorio</button></div></form>`}
+function render(){
+$('#today').textContent=new Date().toLocaleDateString('es-MX',{weekday:'short',day:'numeric',month:'short'});
+$('#greeting').textContent=page==='Inicio'?'Hola, Leonardo 👋':page;
+$('#subtitle').textContent=({Inicio:'Organiza tus tareas, exámenes y recordatorios en un solo lugar.',Tareas:'Agrega trabajos y marca los que ya terminaste.',Exámenes:'Guarda las fechas y los temas que necesitas estudiar.',Recordatorios:'Anota cosas importantes para que no se te olviden.'})[page];
+document.querySelectorAll('.navbtn').forEach(b=>b.classList.toggle('active',b.dataset.page===page));
+$('#mobileNav').value=page;
+let tasks=state.tasks.filter(t=>(!search||(t.title+' '+t.subject+' '+t.notes).toLowerCase().includes(search.toLowerCase()))&&(taskFilter==='Todas'||(taskFilter==='Pendientes'?!t.done:t.done)));
+let pending=state.tasks.filter(t=>!t.done).length;
+let c='';
+if(page==='Inicio'){
+const due=state.tasks.filter(t=>!t.done).sort((a,b)=>(a.date||'9999').localeCompare(b.date||'9999')).slice(0,4);
+const next=state.exams.slice().sort((a,b)=>(a.date||'9999').localeCompare(b.date||'9999')).slice(0,3);
+const rem=state.reminders.filter(r=>!r.done).slice().sort((a,b)=>(a.date||'9999').localeCompare(b.date||'9999')).slice(0,3);
+c=`<div class="grid">${card('Tareas pendientes','☑',due.length?due.map(taskItem).join(''):empty('¡No hay tareas pendientes! Agrega una cuando la necesites.'),'<button class="smallbtn" data-go="Tareas">Ver todas →</button>')}${card('Próximos exámenes','▦',next.length?next.map(examItem).join(''):empty('Todavía no agregas exámenes.'),'<button class="smallbtn" data-go="Exámenes">Ver todos →</button>')}${card('Recordatorios','♧',rem.length?rem.map(reminderItem).join(''):empty('No tienes recordatorios pendientes.'),'<button class="smallbtn" data-go="Recordatorios">Ver todos →</button>')}${card('Resumen','✦',`<div class="item"><strong>${pending}</strong><div class="muted">tarea(s) pendiente(s)</div></div><div class="item"><strong>${state.exams.length}</strong><div class="muted">examen(es) guardado(s)</div></div><div class="item"><strong>${state.reminders.filter(r=>!r.done).length}</strong><div class="muted">recordatorio(s) por hacer</div></div>`)}</div>`;
+}
+if(page==='Tareas')c=`<div class="toolbar"><input id="searchTasks" value="${esc(search)}" placeholder="Buscar tarea o materia…"><select id="taskFilter"><option ${taskFilter==='Todas'?'selected':''}>Todas</option><option ${taskFilter==='Pendientes'?'selected':''}>Pendientes</option><option ${taskFilter==='Terminadas'?'selected':''}>Terminadas</option></select><button class="primary" data-show-form="task">+ Agregar</button></div><div id="task-form-slot"></div><section class="card"><div class="cardhead"><div class="cardtitle">☑ Mi lista de tareas</div><span class="tag">${pending} pendiente(s)</span></div>${tasks.length?tasks.map(taskItem).join(''):empty('Aún no hay tareas. Pulsa “Agregar” para crear la primera.')}</section>`;
+if(page==='Exámenes')c=`<div class="toolbar"><button class="primary" data-show-form="exam">+ Agregar examen</button></div><div id="exam-form-slot"></div><section class="card"><div class="cardhead"><div class="cardtitle">▦ Calendario de exámenes</div><span class="tag">${state.exams.length} guardado(s)</span></div>${state.exams.length?state.exams.slice().sort((a,b)=>(a.date||'9999').localeCompare(b.date||'9999')).map(examItem).join(''):empty('Aún no hay exámenes. Agrega la materia, fecha y tema.')}</section>`;
+if(page==='Recordatorios')c=`<div class="toolbar"><button class="primary" data-show-form="rem">+ Nuevo recordatorio</button></div><div id="rem-form-slot"></div><section class="card"><div class="cardhead"><div class="cardtitle">♧ Mis recordatorios</div><span class="tag">${state.reminders.filter(r=>!r.done).length} pendiente(s)</span></div>${state.reminders.length?state.reminders.slice().sort((a,b)=>(a.date||'9999').localeCompare(b.date||'9999')).map(reminderItem).join(''):empty('No hay recordatorios todavía. Agrega uno para no olvidar nada.')}</section>`;
+$('#content').innerHTML=c;
+}
+document.addEventListener('click',e=>{
+const b=e.target.closest('button');if(!b)return;
+if(b.dataset.page){nav(b.dataset.page);return}if(b.dataset.go){nav(b.dataset.go);return}
+if(b.dataset.showForm){let type=b.dataset.showForm,slot=$('#'+type+'-form-slot');if(slot){slot.innerHTML=type==='task'?taskForm():type==='exam'?examForm():remForm();b.disabled=true;b.textContent='Formulario abierto';}return}
+if(b.hasAttribute('data-cancel-form')){render();return}
+for(const [attr,key] of [['data-delete-task','tasks'],['data-delete-exam','exams'],['data-delete-rem','reminders']])if(b.hasAttribute(attr)){let item=state[key].find(x=>x.id===b.getAttribute(attr));if(item&&confirm('¿Eliminar este elemento?')){state[key]=state[key].filter(x=>x.id!==item.id);save();render();toast('Se eliminó correctamente.')}return}
+if(b.dataset.toggleRem){let r=state.reminders.find(x=>x.id===b.dataset.toggleRem);if(r){r.done=!r.done;save();render();toast(r.done?'Recordatorio completado':'Recordatorio pendiente')}return}
+});
+document.addEventListener('change',e=>{if(e.target.matches('[data-done-task]')){let t=state.tasks.find(x=>x.id===e.target.dataset.doneTask);if(t){t.done=e.target.checked;save();render();toast(t.done?'¡Tarea terminada!':'Tarea pendiente')}}if(e.target.id==='mobileNav')nav(e.target.value);if(e.target.id==='taskFilter'){taskFilter=e.target.value;render()}});
+document.addEventListener('input',e=>{if(e.target.id==='searchTasks'){let pos=e.target.selectionStart;search=e.target.value;render();let input=$('#searchTasks');if(input){input.focus();input.setSelectionRange(pos,pos)}}});
+document.addEventListener('submit',e=>{
+const f=e.target;if(!['taskForm','examForm','remForm'].includes(f.id))return;e.preventDefault();const d=Object.fromEntries(new FormData(f).entries());
+if(f.id==='taskForm')state.tasks.push({id:id(),title:d.title.trim(),subject:d.subject.trim(),date:d.date,notes:d.notes.trim(),done:false});
+if(f.id==='examForm')state.exams.push({id:id(),subject:d.subject.trim(),date:d.date,topic:d.topic.trim()});
+if(f.id==='remForm')state.reminders.push({id:id(),title:d.title.trim(),date:d.date,time:d.time,notes:d.notes.trim(),done:false});
+save();render();toast('¡Guardado en tu dispositivo!');
+});
+render();
+})();
+</script>
+</body>
+</html>
